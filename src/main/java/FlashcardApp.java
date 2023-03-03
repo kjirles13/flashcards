@@ -41,6 +41,7 @@ public class FlashcardApp {
 
         while (running) {
             int randomKey = random.nextInt(flashcards.size());
+
             printQuestion(randomKey);
 
             System.out.print("\nPress enter to continue >>> ");
@@ -56,19 +57,19 @@ public class FlashcardApp {
         }
     }
 
-        public static void delay ( int milliseconds){
-            try {
-                Thread.sleep(milliseconds);
-            } catch (InterruptedException ex) {
-                ex.printStackTrace();
-            }
-        }
-
-        public static void printQuestion(int key){
-            System.out.println("\n" + flashcards.get(key).getQuestion());
-        }
-
-        public static void printAnswer(int key){
-            System.out.println("\n" + flashcards.get(key).getAnswer());
+    public static void delay(int milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
         }
     }
+
+    public static void printQuestion(int key) {
+        System.out.println("\n" + flashcards.get(key).getQuestion());
+    }
+
+    public static void printAnswer(int key) {
+        System.out.println("\n" + flashcards.get(key).getAnswer());
+    }
+}
