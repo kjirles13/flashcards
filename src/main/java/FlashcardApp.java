@@ -15,8 +15,8 @@ public class FlashcardApp {
         flashcards.put(5, new Flashcard("What are the three pillars of OOP?", "Inheritance, Polymorphism, and Encapsulation"));
         flashcards.put(6, new Flashcard("What is Inheritance?", "When a class derives properties and behaviors from another class"));
         flashcards.put(7, new Flashcard("What is Polymorphism? What types are there?", "Polymorphism is the ability of an object to take on many different forms - means our classes can provide different implementations of methods - method overloading and overriding are examples"));
-        flashcards.put(8, new Flashcard("What is Encapsulation?", "Bundling data and methods within a class - information hiding - protects your data and makes it only accessible in certain ways by making methods or properties private or protected"));
-        flashcards.put(9, new Flashcard("What is an abstract class?", "A class that is not instantiated but it can be subclassed - you can implement methods");
+        flashcards.put(8, new Flashcard("What is Encapsulation?", "Bundling data and methods within a class - information hiding or abstraction - protects your data and makes it only accessible in certain ways by making methods or properties private or protected"));
+        flashcards.put(9, new Flashcard("What is an abstract class?", "A class that is not instantiated but it can be subclassed - you can implement methods"));
         flashcards.put(10, new Flashcard("What is the difference between an array and other reference types?", "An array is set size and must be declared that size - allocated to the stack rather than the heap - lists can contain multiple data types and can change size"));
         flashcards.put(11, new Flashcard("What is the difference between a constructor and a method?", "A constructor is called to instantiate an object of a particular class, while a method is a behavior of that class"));
         flashcards.put(12, new Flashcard("What is the difference between primitive (value) types and reference types?", "Primitive values allocate memory in the stack"));
@@ -62,7 +62,7 @@ public class FlashcardApp {
         flashcards.put(52, new Flashcard("What is a JSON Web Token?", "Used primarily for authorization in APIs and other HTTP requests : compact method of transmitting information between parties : in header/payload/signature format"));
         flashcards.put(53, new Flashcard("What is Unix time?", "Number of seconds since 1970-01-01 00:00:00 UTC"));
         flashcards.put(54, new Flashcard("What is Principal?", "The current logged in user"));
-        flashcards.put(55, new Flashcard("What is a package?", "A type of file archice that contains coades or executables and associated information like the package name, version number, and dependencies necessary to run in properly"));
+        flashcards.put(55, new Flashcard("What is a package?", "A namespace that organizes a group of related classes and interfaces - like a folder on your computer"));
         flashcards.put(56, new Flashcard("What is NPM?", "Node.js Package Manager - Written in JavaScript - offers consistent way to install, uninstall, and upgrade software - automatically handles dependencies - packages available online"));
         flashcards.put(57, new Flashcard("How can we test our client-server application is following the rules and protocols of REST?", "Uniform interface, separation of concerns between client and server, STATELESS (does not keep information on user), cacheable, hierarchally labeled"));
         flashcards.put(58, new Flashcard("What is a JWT and how is it used?", "JSON Web Token - compact and self-contained way for transmitting information as a JSON object - often used for user authorization"));
@@ -106,26 +106,53 @@ public class FlashcardApp {
         flashcards.put(96, new Flashcard("What do I use to determine the user's identity in Java WEB API code?", "You would use a JWT token that is returned to to the user when they sign into your account"));
         flashcards.put(97, new Flashcard("What is the Principal?", "Principal is the current user of a program that is authenticated by the program"));
         flashcards.put(98, new Flashcard("What is the difference between a block, inline, and inline-block element?", "Block extends the length of the entire page on its own line, inline can be inserted into a line like a span object and only take up the amount of space needed, an inline-block element allows you to set block elements side by side and still set width and height of the element"));
-
+        flashcards.put(99, new Flashcard("What is Grid?", "Grid provides the ability to split up an HTML page into rows and columns and then assign elements of that page into the \"grid\" that's created"));
+        flashcards.put(100, new Flashcard("What is the fr unit in Grid?", "The unit represents a fraction of the available space in the Grid container"));
+        flashcards.put(101, new Flashcard("What is the Gap property?", "Adds space between cells of the grid in CSS"));
+        flashcards.put(102, new Flashcard("What is vh and vw in CSS?", "vh is relative to 1% of height of the viewport and vw is relative to 1% of the width of the viewport"));
+        flashcards.put(103, new Flashcard("What needs to be addressed for a responsive design?", "Flexible or fluid grid layouts, resizeable images, and CSS media queries"));
+        flashcards.put(104, new Flashcard("What is a media query?", "A special CSS rule that only applies when your viewport reaches a certain breakpoint - common query is for width of screen"));
+        flashcards.put(105, new Flashcard("What is a viewport?", "The area of your web browser where you see content."));
+        flashcards.put(106, new Flashcard("What is version control?", "A program tracking changes to a software program, like github or gitlab"));
+        flashcards.put(107, new Flashcard("What is an IDE?", "Integrated Development Environment - example is IntelliJ - typically include a code editor, a compiler or interpreter, and debugger accessible through a GUI"));
+        flashcards.put(108, new Flashcard("Name some methods you can perform on Strings", "length(), substring(), contains(), startsWith(), endsWith(), indexOf(), replace(), equalsIgnoresCase(), split(), String.join(), toLowerCase(), toUpperCase()"));
+        flashcards.put(109, new Flashcard("What is BigDecimal and what is it used for? What issue does it solve?", "BigDecimal is a precision decimal - It's used to avoid rounding and precision errors that you can get by just using the type double - Used when performing functions on money"));
+        flashcards.put(110, new Flashcard("What is a tree?", "A non-linear data structure that is used to represent hierarchical data - data is stored in a structure called a node"));
+        flashcards.put(111, new Flashcard("Can an ArrayList hold primitive types? Can an array hold objects?", "No - Yes"));
+        flashcards.put(112, new Flashcard("What is a derived property?", "It's a property that is generated based on other property values in your class"));
+        flashcards.put(113, new Flashcard("What are the access modifiers and what do they do?", "Restrict the scope of a class, constructor, variable, method, or data member - Default (not specified and means it's only accessible within the package), Protected (Available in package and sub classes), Private (only within the same class), Public (Accessible from everywhere in the program)"));
+        flashcards.put(114, new Flashcard("What is a magic number? Should you use them?", "A unique number that has specific meaning in your code - you should make them constants for clarity and readability - example '24' as '24 hours in a day'"));
+        flashcards.put(115, new Flashcard("What is the DRY principle? What WET principle?", "Don't Repeat Yourself - if you're rewriting code, refactor into a method that you can call to simplify ; Write Everything Twice - writing something twice is probably fine - avoid refactoring so much you actually make your code more complex"));
+        flashcards.put(116, new Flashcard("What is casting?", "Widening casting happens automatically (example: from an integer to a double) but narrowing casting must be explicitly stated in case you are losing precision and data"));
+        flashcards.put(117, new Flashcard("What is Abstraction and why is it used?", "Hiding the complexity of code from the user - it's done so you can add more complexity on top of that without having to worry about how the underlying code works"));
+        flashcards.put(118, new Flashcard("What is Agile software development?", "Calls for collaborative cross-functional teams often working in small 'sprints' rather than separate teams finishing their section and 'thorwing it over the wall' to the next team"));
+        flashcards.put(119, new Flashcard("What is JUnit?", "Software testing framework in Java - write and execute automated tests for your Java program"));
+        flashcards.put(120, new Flashcard("What is a stacktrace?", "Line of breadcrumbs that can be used to debug a program - list of method calls that the application was in the middle of when an Exception was thrown"));
+        flashcards.put(121, new Flashcard("Walk through the steps of reading a file", "Get file path, create file object, pass into a new Scanner object to open the connection, while data.hasNextLine() you can work with each line of code"));
+        flashcards.put(122, new Flashcard("Walk through the steps of writing to a file", "Create a new PrintWriter with the file object you created, print the message, flush and close the file ; you can append by using the keyword .append()"));
+        flashcards.put(123, new Flashcard("What are the steps of database design", "Data modeling (precisely defining your data), Logical Design (creating a design), Physical Design (adjusting design to meet requirements related to performance), Physical Implementation (creating all the tables and supporting objects)"));
+        flashcards.put(124, new Flashcard("How do you set up a JdbcTemplate to access a database?", "Need a data source - create a BasicDataSource = set the url, username, password for access - instantiate a new jdbctemplate with that datasource"));
+        flashcards.put(125, new Flashcard("Can you overload your main method?", "Yes you can by calling different arguments into the main method"));
+        flashcards.put(126, new Flashcard("What do the String args[] in the main method do?", "They allow you to pass in arguments from the command line"));
 
 
         System.out.println("\n=============================================================================================");
-        System.out.println("========================================Welcome to===========================================\n");
-        delay(500);
+        System.out.println("======================================= Welcome to ==========================================\n");
+        delay(250);
         System.out.println("/$$$$$$$$ /$$                     /$$                                           /$$");
-        delay(500);
+        delay(250);
         System.out.println("| $$_____/| $$                    | $$                                          | $$");
-        delay(500);
+        delay(250);
         System.out.println("| $$      | $$  /$$$$$$   /$$$$$$$| $$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$$");
-        delay(500);
+        delay(250);
         System.out.println("| $$$$$   | $$ |____  $$ /$$_____/| $$__  $$ /$$_____/ |____  $$ /$$__  $$ /$$__  $$ /$$_____/");
-        delay(500);
+        delay(250);
         System.out.println("| $$__/   | $$  /$$$$$$$|  $$$$$$ | $$  \\ $$| $$        /$$$$$$$| $$  \\__/| $$  | $$|  $$$$$$ ");
-        delay(500);
+        delay(250);
         System.out.println("| $$      | $$ /$$__  $$ \\____  $$| $$  | $$| $$       /$$__  $$| $$      | $$  | $$ \\____  $$");
-        delay(500);
+        delay(250);
         System.out.println("| $$      | $$|  $$$$$$$ /$$$$$$$/| $$  | $$|  $$$$$$$|  $$$$$$$| $$      |  $$$$$$$ /$$$$$$$/");
-        delay(500);
+        delay(250);
         System.out.println("|__/      |__/ \\_______/|_______/ |__/  |__/ \\_______/ \\_______/|__/       \\_______/|_______/");
 
         Scanner userInput = new Scanner(System.in);
@@ -146,10 +173,7 @@ public class FlashcardApp {
             printAnswer(randomKey);
 
             System.out.print("\nPress enter to continue or 0 to exit >>> ");
-
-            if (userInput.nextLine().equals("0")) {
-                running = false;
-            }
+            running = userInput.nextLine().equals("0") ? false : true;
         }
     }
 
