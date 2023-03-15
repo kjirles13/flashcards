@@ -88,7 +88,7 @@ public class FlashcardApp {
         flashcards.put(78, new Flashcard("How many classes can a class inherit from?", "One"));
         flashcards.put(79, new Flashcard("How many interfaces can a class inherit from?", "As many as they want"));
         flashcards.put(80, new Flashcard("Describe a try/catch block", "Try is the action you're attempting to do - Catch catches an error if one is thrown - Finally is executed regardless of whether or not the Try was successful"));
-        flashcards.put(81, new Flashcard("What is the ACID principle?", "Transactions in a database - Atomic: one single action, Consistent: no side effects - repeatable, Isolated - does not effect other data in the database, Durable: persist after you're done"));
+        flashcards.put(81, new Flashcard("What is the ACID principle?", "Transactions in a database - Atomic: one single action (all perform or none at all), Consistent: no side effects - repeatable, Isolated - does not effect other transactions occurring simultaneously, Durable: persist after you're done"));
         flashcards.put(82, new Flashcard("How do I get all the values from Table A whether or not there is a match in Table B?", "Left join"));
         flashcards.put(83, new Flashcard("What is a table constraint?", "A table constraint is a way to protect and put conditions on how data can be inserted and deleted - Two big ones are primary key restraints and foreign key restraints"));
         flashcards.put(84, new Flashcard("What is a field constraint?", "A field constraint is placed on a column in an RDBMS to control what information can be put into that column"));
@@ -134,6 +134,9 @@ public class FlashcardApp {
         flashcards.put(124, new Flashcard("How do you set up a JdbcTemplate to access a database?", "Need a data source - create a BasicDataSource = set the url, username, password for access - instantiate a new jdbctemplate with that datasource"));
         flashcards.put(125, new Flashcard("Can you overload your main method?", "Yes you can by calling different arguments into the main method"));
         flashcards.put(126, new Flashcard("What do the String args[] in the main method do?", "They allow you to pass in arguments from the command line"));
+        flashcards.put(127, new Flashcard("What is a UNION in SQL?", "Combines the result set of two or more SELECT statements - only distinct elements - use UNION ALL for duplicate values"));
+        flashcards.put(128, new Flashcard("What is data integrity?", "The overall accuracy, completeness, and consistency of data - ACID principle - data is complete, accurate, and reliable no matter how long it is stored or how often it is accessed"));
+        flashcards.put(129, new Flashcard("What is a URI?", "Uniform Resource Identifier - character sequence that distinguishes one resource from another - a URL is a type of URI"));
 
 
         System.out.println("\n=============================================================================================");
