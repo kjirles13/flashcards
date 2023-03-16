@@ -137,7 +137,10 @@ public class FlashcardApp {
         flashcards.put(127, new Flashcard("What is a UNION in SQL?", "Combines the result set of two or more SELECT statements - only distinct elements - use UNION ALL for duplicate values"));
         flashcards.put(128, new Flashcard("What is data integrity?", "The overall accuracy, completeness, and consistency of data - ACID principle - data is complete, accurate, and reliable no matter how long it is stored or how often it is accessed"));
         flashcards.put(129, new Flashcard("What is a URI?", "Uniform Resource Identifier - character sequence that distinguishes one resource from another - a URL is a type of URI"));
-
+        flashcards.put(130, new Flashcard("What is FlexBox and how does it work?", "Flexible box model - it dynamically handles alignment and spacing between between page items"));
+        flashcards.put(131, new Flashcard("When would you use grid vs flexbox?", "If you're organizing a display on with both rows and columns (two dimensional) use Grid - If you're working with layout, Grid is best - If you're adjusting content within your layout, use flexbox"));
+        flashcards.put(132, new Flashcard("What is big0 notation?", "Relates to time complexity for your program - refers to how long an algorithm takes to run - constant time = 0(1) - linear time = 0(N) - quadratic time = 0(N^2)"));
+        flashcards.put(133, new Flashcard("What is a binary search?", "You half the data you're searching every time. Faster way to search big data sets"));
 
         System.out.println("\n=============================================================================================");
         System.out.println("======================================= Welcome to ==========================================\n");
@@ -163,6 +166,7 @@ public class FlashcardApp {
 
         System.out.print("\nPress enter to start learning! >>> ");
         userInput.nextLine();
+
         Random random = new Random();
 
         while (running) {
