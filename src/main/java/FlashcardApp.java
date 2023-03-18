@@ -141,6 +141,16 @@ public class FlashcardApp {
         flashcards.put(131, new Flashcard("When would you use grid vs flexbox?", "If you're organizing a display on with both rows and columns (two dimensional) use Grid - If you're working with layout, Grid is best - If you're adjusting content within your layout, use flexbox"));
         flashcards.put(132, new Flashcard("What is big0 notation?", "Relates to time complexity for your program - refers to how long an algorithm takes to run - constant time = 0(1) - linear time = 0(N) - quadratic time = 0(N^2)"));
         flashcards.put(133, new Flashcard("What is a binary search?", "You half the data you're searching every time. Faster way to search big data sets"));
+        flashcards.put(134, new Flashcard("What role does HTML, CSS, and JavaScript provide in the browser?", "HTML provides the content and basic structure, CSS makes it prettier and orients stuff on the page, JavaScript makes your page interactive"));
+        flashcards.put(135, new Flashcard("What is Javascript?", "Javascript is a general purpose language intended to make HTML more dynamic"));
+        flashcards.put(136, new Flashcard("What is IoT?", "Stands for Internet of Things - Describes the network of physical objects that are connected to the internet"));
+        flashcards.put(137, new Flashcard("What is a loosely typed language vs a strongly typed language?", "A language that does not required a variable to be defined - like JavaScript - Java is a strongly typed language"));
+        flashcards.put(138, new Flashcard("What is an object in JavaScript?", "A collection of key-value pairs - do not have to call a class or constructor"));
+        flashcards.put(139, new Flashcard("Describe null vs undefined in Javascript", "Undefined is assigned to variables that have been declared but not assigned a value - Null represents the intentional absence of any object value"));
+        flashcards.put(140, new Flashcard("What is shadowing in JavaScript?", "Variables can have the same name in a different scope : The inner variable will 'shadow' the outer variable"));
+        flashcards.put(141, new Flashcard("Describe a web browser vs web server", "A web browser is an application software that is used to browse and display web pages to a user - A web server is a software hosted on a dedicated computer that provides these documents when requested by a web browser"));
+        flashcards.put(142, new Flashcard("What is Emmet?", "It's a plugin for popular text editors where you can use abbreviations and short expressions to quickly build code"));
+
 
         System.out.println("\n=============================================================================================");
         System.out.println("======================================= Welcome to ==========================================\n");
