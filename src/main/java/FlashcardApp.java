@@ -150,6 +150,13 @@ public class FlashcardApp {
         flashcards.put(140, new Flashcard("What is shadowing in JavaScript?", "Variables can have the same name in a different scope : The inner variable will 'shadow' the outer variable"));
         flashcards.put(141, new Flashcard("Describe a web browser vs web server", "A web browser is an application software that is used to browse and display web pages to a user - A web server is a software hosted on a dedicated computer that provides these documents when requested by a web browser"));
         flashcards.put(142, new Flashcard("What is Emmet?", "It's a plugin for popular text editors where you can use abbreviations and short expressions to quickly build code"));
+        flashcards.put(143, new Flashcard("What is JSDoc?", "Mark-up language to annotate JavaScript source code files - detected by your development environment and create documentation"));
+        flashcards.put(145, new Flashcard("What is DOM?", "Document Object Model - browser's internal representation of the structure of the current web page - It provides a way to access and manipulate the structure, style, and content once loaded"));
+        flashcards.put(146, new Flashcard("What is DOM manipulation?", "Writing code to change and select information on the DOM using Javascript"));
+        flashcards.put(147, new Flashcard("What is Vanilla JavaScript?", "Javascript that doesn't rely on any outside utility libraries to do things that you can do with functions and objects defined in the ECMAScript specification"));
+        flashcards.put(148, new Flashcard("What is a Node List?", "In Javascript, it is an object list (collection) of nodes extracted from a document"));
+        flashcards.put(149, new Flashcard("What is the publish and subscribe model?", "Pub-sub is a programmatic way to pass messages between different parts of a system while keeping those parts decoupled from each other - publish means trigger an event and subscribe means and subscribe means listening to en event (Javascript)"));
+        flashcards.put(150, new Flashcard("What is event propogation?", "If an event is triggered in an element in HTML, the event also rises to the top and looks for any listeners for the event in all the parent elements - you can stop this with stopPropagation()"));
 
 
         System.out.println("\n=============================================================================================");
@@ -170,6 +177,7 @@ public class FlashcardApp {
         System.out.println("| $$      | $$|  $$$$$$$ /$$$$$$$/| $$  | $$|  $$$$$$$|  $$$$$$$| $$      |  $$$$$$$ /$$$$$$$/");
         delay(250);
         System.out.println("|__/      |__/ \\_______/|_______/ |__/  |__/ \\_______/ \\_______/|__/       \\_______/|_______/");
+        delay(250);
 
         Scanner userInput = new Scanner(System.in);
         boolean running = true;
