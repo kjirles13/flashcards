@@ -114,7 +114,7 @@ public class FlashcardApp {
         flashcards.put(104, new Flashcard("What is a media query?", "A special CSS rule that only applies when your viewport reaches a certain breakpoint - common query is for width of screen"));
         flashcards.put(105, new Flashcard("What is a viewport?", "The area of your web browser where you see content."));
         flashcards.put(106, new Flashcard("What is version control?", "A program tracking changes to a software program, like github or gitlab"));
-        flashcards.put(107, new Flashcard("What is an IDE?", "Integrated Development Environment - example is IntelliJ - typically include a code editor, a compiler or interpreter, and debugger accessible through a GUI"));
+        flashcards.put(107, new Flashcard("What is an IDE?", "Integrated Development Environment - example is IntelliJ - typically include a code editor (syntax highlighting and intelligent code completion), a compiler or interpreter, and debugger accessible through a GUI - "));
         flashcards.put(108, new Flashcard("Name some methods you can perform on Strings", "length(), substring(), contains(), startsWith(), endsWith(), indexOf(), replace(), equalsIgnoresCase(), split(), String.join(), toLowerCase(), toUpperCase()"));
         flashcards.put(109, new Flashcard("What is BigDecimal and what is it used for? What issue does it solve?", "BigDecimal is a precision decimal - It's used to avoid rounding and precision errors that you can get by just using the type double - Used when performing functions on money"));
         flashcards.put(110, new Flashcard("What is a tree?", "A non-linear data structure that is used to represent hierarchical data - data is stored in a structure called a node"));
@@ -166,6 +166,20 @@ public class FlashcardApp {
         flashcards.put(157, new Flashcard("What is the DNS?", "Domain Name System - A DNS is a server that translates domain names into IP addresses"));
         flashcards.put(158, new Flashcard("What is the difference between HTTP and HTTPS?", "HTTPS uses encryption so it's much more secure - Uses TLS (Transportation Layer Protection) - public key (asymmetric) encryption"));
         flashcards.put(159, new Flashcard("Describe how encryption works", "Scrambling data so it is unreadable without a cryptographic key - There is symmetric encryption where all communicating parties use the same key and asymmetric where there is a public key for encryption but only one private key for decryption"));
+        flashcards.put(160, new Flashcard("What is HTTP?", "Hypertext Transfer Protocol - protocol for fetching resources like webpages"));
+        flashcards.put(161, new Flashcard("What is an event on a webpage?", "An action taken by the user to which you might want to respond: ex: submit button, moving your mouse, entering text, clicks, mouseover, mouseout"));
+        flashcards.put(162, new Flashcard("What is the difference between a method and a computed property?", "Computed properties calculate or filter existing data - Methods can be called upon with user input or an event, they accept parameters, and they're bound to a Vue instance"));
+        flashcards.put(163, new Flashcard("What is the single responsibility principle?", "states that each component in an application should only handle one job - easier to maintain and reusable"));
+        flashcards.put(164, new Flashcard("What is a props property in Vue?", "A property that is passed to a child component through the parent component"));
+        flashcards.put(165, new Flashcard("What does 'state' or 'state management library' mean in Vue and other frameworks?", "Data within your application and how it's managed"));
+        flashcards.put(166, new Flashcard("What are the three main parts of a componenet in Vue?", "State (data), the view (mapping of state), and actions (methods)"));
+        flashcards.put(167, new Flashcard("What is a mutation in Vue?", "Committing a mutation is the only way to change data in your store"));
+        flashcards.put(168, new Flashcard("What is .NET?", "A free, cross-platform, open source developer platform for building many different types of applications"));
+        flashcards.put(169, new Flashcard("What is a the security same-origin policy?", "Many web browsers prevent JavaScript code from making requests against a different origin than the one it originated from: use Cross-Origin Resource Sharing"));
+        flashcards.put(170, new Flashcard("What is an origin in an HTTP request from a website?", "Defined as protocol, port, and full domain including sub-domain"));
+        flashcards.put(171, new Flashcard("What is Cross-Origin Resource Sharing?", "CORS uses additional HTTP headers to tell browsers to give a web application from one origin access to selected resources from a different origin"));
+        flashcards.put(172, new Flashcard("What is an OPTIONS HTTP request?", "Cross-Origin Resource Sharing request that contains an origin header to request access to other resources"));
+        flashcards.put(173, new Flashcard("What is Asynchronous programming?", "A promise is returned so your program can continue running while an HTTP call is being made - keeps your web page from slowing down for complex requests that take time"));
 
 
         System.out.println("\n=============================================================================================");
